@@ -105,14 +105,15 @@ export default function MoodChart() {
             stroke="#F4A261"
             strokeWidth={2}
             dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: MoodEntry }) => (
-              <image
-                href={payload.emoji}
-                x={cx! - 12}
-                y={cy! - 12}
-                height="24px"
-                width="24px"
-              />
-            )}
+  <image
+    xlinkHref={payload.emoji}
+    x={cx! - 12}
+    y={cy! - 12}
+    height="24"
+    width="24"
+  />
+)}
+
             activeDot={false}
           />
         </LineChart>
