@@ -50,7 +50,7 @@ export default function MoodChart() {
       const formatted: MoodEntry[] = Object.entries(entries)
         .map(([date, entry]) => {
           const moodName =
-            entry.mood?.split("/").pop()?.replace(".png", "") || "neutral";
+            entry.mood?.split("/").pop()?.replace(".png", "").toLowerCase() || "neutral";
           return {
             originalDate: date,
             date: format(new Date(date), "MMM d"),
