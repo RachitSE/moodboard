@@ -1,15 +1,16 @@
+// src/lib/firebase.ts
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyA9XkHezwFc0V5QROSBzZPAmGIbGVmbcl4",
+  authDomain: "moodboard-49c04.firebaseapp.com",
+  projectId: "moodboard-49c04",
+  storageBucket: "moodboard-49c04.appspot.com",
+  messagingSenderId: "359425421316",
+  appId: "1:359425421316:web:8b421a0e6e6666155c8551",
+  measurementId: "G-X0PTGWQZBD",
 };
 
 // Initialize Firebase
